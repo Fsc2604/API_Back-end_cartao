@@ -1,4 +1,4 @@
-﻿using API_cartao1.Models;
+using API_cartao1.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -14,7 +14,6 @@ using Microsoft.EntityFrameworkCore;
 namespace API_cartao1.Controllers 
 {
     [Route("api/[controller]")]
-    [Produces("application/json")]
     [ApiController]
     public class PagamentoController : ControllerBase
     {  
@@ -70,11 +69,14 @@ namespace API_cartao1.Controllers
         }
         // POST: api/Pagamento
         [HttpPost]
-        public async Task<ActionResult<Pagamentoo>> PostPagamentoo(Pagamentoo pagamentoo)
+        public async Task<ActionResult<Pagamentoo>> PostPagamentoo(PagamentoDTO pagamento)
         {
+            Pagamentoo pagamentoo = new Pagamentoo(pagamento);
+
             _context.Pagamentos.Add(pagamentoo);
             await _context.SaveChangesAsync();
-            return CreatedAtAction("GetPagamento", new { id = pagamentoo.Id }, pagamentoo);
+
+            return Ok();
         }
         // DELETE: api/Pagamentos/5
         [HttpDelete("{id}")]

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Projetos Asp netcore\\API_cartao1\\API_cartao1.csproj": {}
+    "E:\\Projetos\\FabioProjeto\\FabioBack\\API_cartao1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Projetos Asp netcore\\API_cartao1\\API_cartao1.csproj": {
+    "E:\\Projetos\\FabioProjeto\\FabioBack\\API_cartao1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Projetos Asp netcore\\API_cartao1\\API_cartao1.csproj",
+        "projectUniqueName": "E:\\Projetos\\FabioProjeto\\FabioBack\\API_cartao1.csproj",
         "projectName": "API_cartao1",
-        "projectPath": "C:\\Users\\User\\Desktop\\Projetos Asp netcore\\API_cartao1\\API_cartao1.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Projetos Asp netcore\\API_cartao1\\obj\\",
+        "projectPath": "E:\\Projetos\\FabioProjeto\\FabioBack\\API_cartao1.csproj",
+        "packagesPath": "C:\\Users\\burno\\.nuget\\packages\\",
+        "outputPath": "E:\\Projetos\\FabioProjeto\\FabioBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\burno\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,17 +42,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.9, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[5.0.9, )"
             }
           },
           "imports": [
@@ -73,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
         }
       }
     }

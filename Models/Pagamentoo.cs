@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,5 +22,18 @@ namespace API_cartao1.Models
         [Required]
         [Column(TypeName = "varchar(3)")]
         public string CVV { get; set; }
-    }
+
+        public Pagamentoo(PagamentoDTO dTO)
+        {
+          NomeTitular = dTO.NomeTitular;
+          NumeroCartao = dTO.NumeroCartao;
+          DataExpiracao = dTO.DataExpiracao;
+          CVV = dTO.CVV;
+        }
+
+        public Pagamentoo()
+        {
+
+        }
+  }
 }
